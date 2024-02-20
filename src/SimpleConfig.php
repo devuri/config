@@ -15,7 +15,7 @@ class SimpleConfig implements ConfigRepositoryInterface
     protected $inMemoryCache = [];
     protected $filesystem;
 
-    public function __construct( $configPath, $environment = 'production', $cachePath = 'configCache.php', array $allowedFiles = [] )
+    public function __construct( $configPath, array $allowedFiles = [], ?string $environment = null, ?string $cachePath = null )
     {
         $this->filesystem   = new Filesystem();
         $this->cachePath    = $cachePath;
@@ -76,9 +76,13 @@ class SimpleConfig implements ConfigRepositoryInterface
 
     protected function cacheConfigurations(): void
     {
-        if ( 'production' !== $this->environment ) {
+        if ( is_null( $this->environment ) || 'production' !== $this->environment ) {
             return;
         }
+
+		if ( is_null( $this->cachePath ) ) {
+			return;
+		}
 
         try {
             $this->filesystem->dumpFile( $this->cachePath, '<?php return ' . var_export( $this->config, true ) . ';' );
