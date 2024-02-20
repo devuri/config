@@ -29,7 +29,7 @@ $configPath = __DIR__ . '/config';
 $allowedFiles = ['app', 'database'];
 
 // Instantiate the SimpleConfig object
-$config = new SimpleConfig($configPath, 'production', 'path/to/configCache.php', $allowedFiles);
+$config = new SimpleConfig($configPath, $allowedFiles, 'production', 'path/to/configCache.php');
 
 // Access configuration values
 $appName = $config->get('app.name');
