@@ -59,4 +59,5 @@ Please submit pull requests or create issues for any features, fixes, or improve
 
 ## License
 
-Licensed under the MIT License. See the LICENSE file for more details.
+Licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
