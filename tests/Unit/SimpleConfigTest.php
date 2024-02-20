@@ -39,7 +39,7 @@ class SimpleConfigTest extends TestCase
 
     public function test_get_configuration_values(): void
     {
-        $simpleConfig = new SimpleConfig($this->testConfigPath, 'production', $this->cachePath, ['app']);
+        $simpleConfig = new SimpleConfig($this->testConfigPath, ['app'], 'production', $this->cachePath);
 
         // Test basic top-level configuration
         $this->assertSame('MyTestApp', $simpleConfig->get('app.name'));
