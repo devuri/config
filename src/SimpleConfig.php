@@ -15,7 +15,7 @@ class SimpleConfig implements ConfigRepositoryInterface
     protected $inMemoryCache = [];
     protected $filesystem;
 
-    public function __construct( $configPath, array $allowedFiles = [], ?string $environment = null, ?string $cachePath = null )
+    public function __construct( $configPath, array $allowedFiles = [], ?string $environment = null, string $cachePath = '' )
     {
         $this->filesystem   = new Filesystem();
         $this->cachePath    = $cachePath;
