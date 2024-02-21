@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/devuri/config/compare/v0.1.2...v0.1.3) (2024-02-21)
+
+
+### Bug Fixes
+
+* update $cachePath is a string required for php 8.1 ([bafbf79](https://github.com/devuri/config/commit/bafbf7964d76c1ab169b052b9a14c9266c2fadb0))
+
 ## [0.1.2](https://github.com/devuri/config/compare/v0.1.1...v0.1.2) (2024-02-20)
 
 
