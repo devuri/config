@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.4](https://github.com/devuri/config/compare/v0.1.3...v0.1.4) (2024-05-03)
+
+
+### Bug Fixes
+
+* use 5.4.38 file system Update composer.json ([a9ddf89](https://github.com/devuri/config/commit/a9ddf89e2426b4ee4f0175fd0672f6cc17b52b50))
+
 ## [0.1.3](https://github.com/devuri/config/compare/v0.1.2...v0.1.3) (2024-02-21)
 
 
