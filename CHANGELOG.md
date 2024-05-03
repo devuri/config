@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.5](https://github.com/devuri/config/compare/v0.1.4...v0.1.5) (2024-05-03)
+
+
+### Bug Fixes
+
+* Update composer.json ([69f9dff](https://github.com/devuri/config/commit/69f9dff8c59b84b54623be7c7d925fc0bbb5e2ef))
+
 ## [0.1.4](https://github.com/devuri/config/compare/v0.1.3...v0.1.4) (2024-05-03)
 
 
