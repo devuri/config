@@ -18,7 +18,7 @@
     "require": {
         "php": "^7.4 || ^8.0",
         "dflydev/dot-access-data": "^3.0",
-        "symfony/filesystem": "5.4.38"
+        "symfony/filesystem": "5.4.40"
     },
     "autoload": {
         "psr-4": {
